@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 
 petals_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
-  geom_point()
+  geom_point(aes(color = Species))+
+  theme_classic()
 
 petals_graph
 

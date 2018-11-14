@@ -9,3 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+
+library(tidyverse)
+
+petals_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
+  geom_point()
+
+petals_graph
+
+```
+
